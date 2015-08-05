@@ -1,6 +1,6 @@
 ﻿namespace EasyOa.Service
 {
-    partial class LogConsumer
+    partial class LogConsumerService
     {
         /// <summary> 
         /// 必需的设计器变量。

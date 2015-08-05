@@ -17,7 +17,7 @@ namespace EasyOa.Service
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new LogConsumer() 
+                new LogConsumerService() 
             };
             ServiceBase.Run(ServicesToRun);
         }
