@@ -40,6 +40,7 @@
             // serviceInstaller1
             // 
             this.serviceInstaller1.Description = "EasyOa服务(日志)";
+            this.serviceInstaller1.DisplayName = "EasyOa服务";
             this.serviceInstaller1.ServiceName = "EasyOa.Service";
             // 
             // ProjectInstaller
