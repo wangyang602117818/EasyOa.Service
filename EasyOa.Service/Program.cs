@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using EasyOa.Common;
 
 namespace EasyOa.Service
 {
@@ -14,6 +16,8 @@ namespace EasyOa.Service
         /// </summary>
         static void Main()
         {
+            //log4net配置文件
+            log4net.Config.XmlConfigurator.Configure(new FileInfo(AppConfig.BasePath + "log4net.config"));
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
