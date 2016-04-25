@@ -40,7 +40,7 @@ namespace EasyOa.Service
         /// 用于处理消息的方法
         /// </summary>
         /// <param name="person"></param>
-        /// <returns></returns>
+        /// <returns>返回处理的结果,true:正确处理,false:处理失败</returns>
         public bool Execute(Person person)
         {
             LogHelper.InfoLog(JsonSerializerHelper.Serialize(person));
